@@ -11,18 +11,24 @@ html, body {
 }
 
 #color-list{
-  width: 200px;
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: #fff;
-  padding: 20px;
+  padding: 15px;
 }
 
 .bar {
-    width: 70%;
-    height: 5px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
+    background-color: red;
+    margin: -2px;
+    border: solid 1px #fff;
+}
+
+.color{
+  display: inline-block;
 }
 
 span{

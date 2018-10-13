@@ -4,7 +4,12 @@
     {{/each}}
     </ul>
     <div id="map"></div>
-    
+    <div id="color-list">
+	<span>{{number}} vị trí</span>
+    {{#each locations}}
+    	<div class="bar"></div>
+	{{/each}}
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/google_maps.js"></script>
     <script async defer

@@ -37,7 +37,8 @@ app.get('/', function(req, res, next) {
 		console.log('########');
 
 		return res.render('index',{
-  			'locations': locations
+  			'locations': locations,
+  			'number': locations.length,
   		});
 	});
 });

@@ -1,6 +1,6 @@
 var locations = []
 
-var num_locations = $('li.element').length;
+var num_locations = $('li.element').length || 0;
 var elements = $('li.element');
 
 for (let i = 0; i < num_locations; ++i){
@@ -27,7 +27,7 @@ function initMap() {
     console.log(typeof initLocation);
 
     map = new google.maps.Map(
-      document.getElementById('map'), {center: initLocation, zoom: 8});
+      document.getElementById('map'), {center: initLocation, zoom: 11.5});
 
 //    var image = 'static/blue-dot.png';
 
@@ -58,5 +58,9 @@ socket.on('location', function(msg){
 //            icon: image,
     });
     markers.push(marker);
+
+    $('#color-list').append($('<div class="bar"></div>'));
+    num_locations += 1;
+    $('#color-list>span').text(num_locations + ' vị trí');
 });
 
