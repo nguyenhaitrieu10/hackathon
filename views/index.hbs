@@ -1,0 +1,18 @@
+   	<ul>
+    {{#each locations}}
+		<li class="element" style="display: none;">{"lat":{{lat}},"lng":{{lng}} }</li>
+    {{/each}}
+    </ul>
+    <div id="map"></div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/google_maps.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYXfxM1teeGoBJqcoer9NYyI8H-qen6Fc&callback=initMap" type="text/javascript">
+    </script>
+
+    
+<!--  KEYS  -->
+<!-- AIzaSyBYXfxM1teeGoBJqcoer9NYyI8H-qen6Fc  -->
+<!--  AIzaSyClFViqEb-0LGhvlXSsR09wKxgAEbrf7b0  -->
+<!--  AIzaSyBrdvjjNY8nmW8OiLoJv9yCY_cMq-Mu9_A  -->

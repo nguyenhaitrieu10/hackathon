@@ -1,0 +1,30 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 100%;
+}
+  /* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#color-list{
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.bar {
+    width: 70%;
+    height: 5px;
+    display: inline-block;
+}
+
+span{
+    padding: 10px;
+}
